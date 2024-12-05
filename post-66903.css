@@ -1388,7 +1388,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 }
 
 .elementor-66903 .elementor-element.elementor-element-777a0153:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-66903 .elementor-element.elementor-element-777a0153 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("https://i0.wp.com/wed-webs.com/wp-content/uploads/2021/09/ROSIHANDIKA-0898.jpg?fit=1024%2C1534&ssl=1");
+	background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730316050388-a.jpg?fit=1024%2C1534&ssl=1");
 	background-position: bottom center;
 	background-size: cover;
 }
@@ -1418,14 +1418,14 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 }
 
 .elementor-66903 .elementor-element.elementor-element-52118583 .elementor-heading-title {
-	color: #D0B577;
+	color: #FFFFFF;
 	font-family: "Julietta", Sans-serif;
 	font-size: 3rem;
 	font-weight: normal;
 }
 
 .elementor-66903 .elementor-element.elementor-element-5434e252:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-66903 .elementor-element.elementor-element-5434e252 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("https://i0.wp.com/wed-webs.com/wp-content/uploads/2021/09/ROSIHANDIKA-0894.jpg?fit=1024%2C1534&ssl=1");
+	background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730305199604-a.jpg?fit=1024%2C1534&ssl=1");
 	background-position: bottom center;
 	background-size: cover;
 }
@@ -1461,14 +1461,14 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 }
 
 .elementor-66903 .elementor-element.elementor-element-57490b5a .elementor-heading-title {
-	color: #D0B577;
+	color: #FFFFFF;
 	font-family: "Julietta", Sans-serif;
 	font-size: 3rem;
 	font-weight: normal;
 }
 
 .elementor-66903 .elementor-element.elementor-element-7f719f77:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-66903 .elementor-element.elementor-element-7f719f77 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/02/ROSIHANDIKA-.jpg?fit=1024%2C1534&ssl=1");
+	background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730316768999-a.jpg?fit=1024%2C1534&ssl=1");
 	background-position: bottom right;
 	background-size: cover;
 }
@@ -1504,7 +1504,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 }
 
 .elementor-66903 .elementor-element.elementor-element-26c17a14 .elementor-heading-title {
-	color: #D0B577;
+	color: #FFFFFF;
 	font-family: "Julietta", Sans-serif;
 	font-size: 3rem;
 	font-weight: normal;
@@ -1910,14 +1910,16 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 }
 
 .elementor-66903 .elementor-element.elementor-element-59ff3050:not(.elementor-motion-effects-element-type-background), .elementor-66903 .elementor-element.elementor-element-59ff3050 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("https://satryo.github.io/satryo-nana-invitation/1729490903669-a.jpg?fit=1024%2C1534&ssl=1");
+	background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1729490397731-a.jpg?fit=1024%2C1534&ssl=1");
 	background-position: center center;
 	background-size: cover;
 }
 
 .elementor-66903 .elementor-element.elementor-element-59ff3050 > .elementor-background-overlay {
 	background-color: transparent;
-	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, #000000 100%);
+	background-image: 
+		linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, #000000 100%),
+		linear-gradient(360deg, rgba(255, 255, 255, 0) 46%, #000000 100%);
 	opacity: 0.8;
 	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
