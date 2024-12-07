@@ -800,7 +800,7 @@
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://wed-webs.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1' media='all' />
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://wed-webs.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1' media='all' />
 <link rel='stylesheet' id='elementor-icons-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.32.0' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://wed-webs.com/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1732760664' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://satryo.github.io/satryo-nana-invitation/css/custom-frontend.min.css?ver=1732760665' media='all' />
 <link rel='stylesheet' id='swiper-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' media='all' />
 <link rel='stylesheet' id='e-swiper-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.10' media='all' />
 <link rel='stylesheet' id='elementor-post-25903-css' href='https://wed-webs.com/wp-content/uploads/elementor/css/post-25903.css?ver=1732760664' media='all' />
@@ -822,7 +822,7 @@
 <link rel='stylesheet' id='e-animation-fadeInLeft-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInLeft.min.css?ver=3.25.10' media='all' />
 <link rel='stylesheet' id='e-animation-fadeInRight-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInRight.min.css?ver=3.25.10' media='all' />
 <link rel='stylesheet' id='widget-image-box-css' href='https://wed-webs.com/wp-content/uploads/elementor/css/custom-widget-image-box.min.css?ver=1732760664' media='all' />
-<link rel='stylesheet' id='elementor-post-66903-css' href='https://satryo.github.io/satryo-nana-invitation/css/post-66903.css?ver=1732762215' media='all' />
+<link rel='stylesheet' id='elementor-post-66903-css' href='https://satryo.github.io/satryo-nana-invitation/css/post-66903.css?ver=1732762216' media='all' />
 <link rel='stylesheet' id='fluentform-elementor-widget-css' href='https://wed-webs.com/wp-content/plugins/fluentform/assets/css/fluent-forms-elementor-widget.css?ver=5.2.6' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CKarla%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CQuicksand%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.7.1' media='all' />
 <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://wed-webs.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
@@ -1003,13 +1003,59 @@ function launch(){
     launch1();
     launch2();
 }
+
+function toggleSections() {
+        const section1 = document.getElementById('1');
+        const section2 = document.getElementById('2');
+
+        if (window.innerWidth >= 1024) {
+            section1.style.display = 'block';
+            section2.style.display = 'none';
+        } else {
+            section1.style.display = 'none';
+            section2.style.display = 'block';
+        }
+    }
+
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', toggleSections);
+
+    // Run on window resize
+    window.addEventListener('resize', toggleSections);
 </script>		</div>
 				</div>
 					</div>
 		</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-5489aa5e elementor-section-height-min-height animated-slow elementor-section-full_width elementor-section-items-bottom elementor-section-height-default elementor-invisible" data-id="5489aa5e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:66855,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730302463432-c.jpg&quot;},{&quot;id&quot;:66853,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1729490397731-a.jpg&quot;},{&quot;id&quot;:66854,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730305607944-a.jpg&quot;}],&quot;background_slideshow_transition_duration&quot;:5000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;zoomIn&quot;,&quot;animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
+			<section id="1" class="elementor-section elementor-top-section elementor-element elementor-element-5489aa5e elementor-section-height-min-height animated-slow elementor-section-full_width elementor-section-items-bottom elementor-section-height-default elementor-invisible" data-id="5489aa5e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:66855,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730302463432-croped.jpg&quot;},{&quot;id&quot;:66853,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1729490397731-a.jpg&quot;},{&quot;id&quot;:66854,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730305607944-a.jpg&quot;}],&quot;background_slideshow_transition_duration&quot;:5000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;zoomIn&quot;,&quot;animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
+						<div class="elementor-background-overlay"></div>
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2af4f5cd" data-id="2af4f5cd" data-element_type="column">
+		<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-element elementor-element-0bff801 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="0bff801" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:350}" data-widget_type="heading.default">
+			<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default"><b>THE WEDDING OF</b></h2>		</div>
+			</div>
+			<div class="elementor-element elementor-element-38748990 animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="38748990" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_mobile&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+			<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">Satryo &amp; Nana</h2>		</div>
+			</div>
+			<div class="elementor-element elementor-element-59d3994e elementor-widget-divider--view-line_text elementor-widget-divider--element-align-center elementor-invisible elementor-widget elementor-widget-divider" data-id="59d3994e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="divider.default">
+			<div class="elementor-widget-container">
+				<div class="elementor-divider">
+					<span class="elementor-divider-separator">
+									<span class="elementor-divider__text elementor-divider__element">
+										<b>02.02.25</b>				</span>
+								</span>
+	</div>
+			</div>
+			</div>
+				</div>
+	</div>
+				</div>
+	</section>
+				<section id="2" class="elementor-section elementor-top-section elementor-element elementor-element-5489aa5e elementor-section-height-min-height animated-slow elementor-section-full_width elementor-section-items-bottom elementor-section-height-default elementor-invisible" data-id="5489aa5e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:66855,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730302463432-c.jpg&quot;},{&quot;id&quot;:66853,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1729490397731-a.jpg&quot;},{&quot;id&quot;:66854,&quot;url&quot;:&quot;https:\/\/satryo.github.io\/satryo-nana-invitation\/images\/1730305607944-a.jpg&quot;}],&quot;background_slideshow_transition_duration&quot;:5000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;zoomIn&quot;,&quot;animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2af4f5cd" data-id="2af4f5cd" data-element_type="column">
@@ -1197,7 +1243,8 @@ Ibu Wahyuni Soetjipto</p>
 					<div class="elementor-background-overlay"></div>
 						<div class="elementor-element elementor-element-3519a760 elementor-invisible elementor-widget elementor-widget-image" data-id="3519a760" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_mobile&quot;:&quot;zoomIn&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/ceritahandikarosiana.com/wp-content/uploads/2020/11/awedding-rings.png?w=800&#038;ssl=1" title="" alt="" loading="lazy" />													</div>
+													<!-- <img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/ceritahandikarosiana.com/wp-content/uploads/2020/11/awedding-rings.png?w=800&#038;ssl=1" title="" alt="" loading="lazy" />													 -->
+				</div>
 				</div>
 				<div class="elementor-element elementor-element-2e9cce0c elementor-invisible elementor-widget elementor-widget-heading" data-id="2e9cce0c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -1263,7 +1310,8 @@ Ibu Wahyuni Soetjipto</p>
 					<div class="elementor-background-overlay"></div>
 						<div class="elementor-element elementor-element-840ac26 elementor-invisible elementor-widget elementor-widget-image" data-id="840ac26" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_mobile&quot;:&quot;zoomIn&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/ceritahandikarosiana.com/wp-content/uploads/2020/11/aromantic-dinner-1.png?w=800&#038;ssl=1" title="" alt="" loading="lazy" />													</div>
+													<!-- <img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/ceritahandikarosiana.com/wp-content/uploads/2020/11/aromantic-dinner-1.png?w=800&#038;ssl=1" title="" alt="" loading="lazy" /> -->
+												</div>
 				</div>
 				<div class="elementor-element elementor-element-5938e47e elementor-invisible elementor-widget elementor-widget-heading" data-id="5938e47e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -1596,11 +1644,11 @@ Ibu Wahyuni Soetjipto</p>
 </div>
 <div class="elementor-element elementor-element-cad3935 elementor-invisible elementor-widget elementor-widget-image" data-id="cad3935" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_mobile&quot;:&quot;zoomIn&quot;}" data-widget_type="image.default">
 <div class="elementor-widget-container">
-										<a href="https://wed-webs.com" target="_blank">
-			<img loading="lazy" decoding="async" width="279" height="279" src="https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?fit=279%2C279&amp;ssl=1" class="attachment-full size-full wp-image-74705" alt="" srcset="https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?w=279&amp;ssl=1 279w, https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?resize=150%2C150&amp;ssl=1 150w" sizes="(max-width: 279px) 100vw, 279px" />								</a>
+										<!-- <a href="https://wed-webs.com" target="_blank">
+			<img loading="lazy" decoding="async" width="279" height="279" src="https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?fit=279%2C279&amp;ssl=1" class="attachment-full size-full wp-image-74705" alt="" srcset="https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?w=279&amp;ssl=1 279w, https://i0.wp.com/wed-webs.com/wp-content/uploads/2022/03/Logo-W-2022-Gold.png?resize=150%2C150&amp;ssl=1 150w" sizes="(max-width: 279px) 100vw, 279px" />								</a> -->
 									</div>
 </div>
-<div class="elementor-element elementor-element-2871d383 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-invisible elementor-widget elementor-widget-social-icons" data-id="2871d383" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="social-icons.default">
+<!-- <div class="elementor-element elementor-element-2871d383 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-invisible elementor-widget elementor-widget-social-icons" data-id="2871d383" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="social-icons.default">
 <div class="elementor-widget-container">
 	<div class="elementor-social-icons-wrapper elementor-grid">
 			<span class="elementor-grid-item">
@@ -1620,7 +1668,7 @@ Ibu Wahyuni Soetjipto</p>
 </span>
 	</div>
 </div>
-</div>
+</div> -->
 <div class="elementor-element elementor-element-74686362 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="74686362" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
 			<p>Backsound: <a href="https://youtu.be/3dVhZuyltII">I Will Spend My Whole Life Loving You by Kina Grannis &amp; Imaginary Future</a></p>						</div>

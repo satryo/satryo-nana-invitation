@@ -1,7 +1,17 @@
-.elementor-66903 .elementor-element.elementor-element-b7d5960:not(.elementor-motion-effects-element-type-background), .elementor-66903 .elementor-element.elementor-element-b7d5960 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-	background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730302463432-c.jpg");
-	background-position: center -390px;
-	background-size: cover;
+@media(max-width:765px) {
+	.elementor-66903 .elementor-element.elementor-element-b7d5960:not(.elementor-motion-effects-element-type-background), .elementor-66903 .elementor-element.elementor-element-b7d5960 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+		background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730302463432-c.jpg");
+		background-position: center 0px;
+		background-size: cover;
+	}
+}
+
+@media(min-width:1024px) {
+	.elementor-66903 .elementor-element.elementor-element-b7d5960:not(.elementor-motion-effects-element-type-background), .elementor-66903 .elementor-element.elementor-element-b7d5960 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+		background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730302463432-c.jpg");
+		background-position: center -390px;
+		background-size: cover;
+	}
 }
 
 .elementor-66903 .elementor-element.elementor-element-b7d5960 > .elementor-background-overlay {
@@ -153,7 +163,7 @@
 }
 
 .elementor-66903 .elementor-element.elementor-element-2af4f5cd > .elementor-element-populated {
-	margin: 0% 0% 8% 0%;
+	margin: 0% 0% 5% 0%;
 	--e-column-margin-right: 0%;
 	--e-column-margin-left: 0%;
 }
@@ -2340,7 +2350,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 	}
 
 	.elementor-66903 .elementor-element.elementor-element-fe2ae03 > .elementor-element-populated {
-		margin: 0% 0% 40% 0%;
+		margin: 0% 0% 10% 0%;
 		--e-column-margin-right: 0%;
 		--e-column-margin-left: 0%;
 	}
