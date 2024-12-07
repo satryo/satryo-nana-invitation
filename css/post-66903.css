@@ -159,7 +159,7 @@
 	margin-top: 0%;
 	margin-bottom: 0%;
 	padding: 0% 10% 0% 10%;
-	z-index: 5;
+	z-index: 4;
 }
 
 .elementor-66903 .elementor-element.elementor-element-2af4f5cd > .elementor-element-populated {
@@ -2299,7 +2299,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 		margin: 1em 1em 1em 1em;
 		--e-column-margin-right: 1em;
 		--e-column-margin-left: 1em;
-		padding: 4em 2em 4em 2em;
+		padding: 2em 2em 4em 2em;
 	}
 
 	.elementor-66903 .elementor-element.elementor-element-2675db7c {
@@ -2424,7 +2424,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 
 	.elementor-66903 .elementor-element.elementor-element-5489aa5e {
 		padding: 0em 0em 0em 0em;
-		z-index: 5;
+		z-index: 4;
 	}
 
 	.elementor-66903 .elementor-element.elementor-element-2af4f5cd > .elementor-widget-wrap > .elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
@@ -3021,7 +3021,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 		margin: 0% 0% 0% 0%;
 		--e-column-margin-right: 0%;
 		--e-column-margin-left: 0%;
-		padding: 28% 8% 28% 8%;
+		padding: 8% 8% 28% 8%;
 	}
 
 	.elementor-66903 .elementor-element.elementor-element-4dbefa79 {
