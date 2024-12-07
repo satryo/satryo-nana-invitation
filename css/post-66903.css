@@ -1,4 +1,4 @@
-@media(max-width:765px) {
+@media(max-width:1024px) {
 	.elementor-66903 .elementor-element.elementor-element-b7d5960:not(.elementor-motion-effects-element-type-background), .elementor-66903 .elementor-element.elementor-element-b7d5960 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
 		background-image: url("https://satryo.github.io/satryo-nana-invitation/images/1730302463432-c.jpg");
 		background-position: center 0px;
@@ -2350,7 +2350,7 @@ body.rtl .elementor-66903 .elementor-element.elementor-element-ba68a69 .elemento
 	}
 
 	.elementor-66903 .elementor-element.elementor-element-fe2ae03 > .elementor-element-populated {
-		margin: 0% 0% 10% 0%;
+		margin: 0% 0% 30% 0%;
 		--e-column-margin-right: 0%;
 		--e-column-margin-left: 0%;
 	}
