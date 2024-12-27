@@ -875,18 +875,24 @@ function decryptName(encryptedName) {
     }
 
     function displayGuestName() {
-      const encryptedName = decodeURIComponent(window.location.pathname.slice(1));
-      try {
-        const guestName = decryptName(encryptedName);
-        if (guestName) {
-			console.log(`guestName: ${guestName}`);
-          document.getElementById("guestNameDisplay").innerText = `${guestName}`;
-        } else {
-          document.getElementById("guestNameDisplay").innerText = "Invalid invitation link.";
-        }
-      } catch (e) {
-        document.getElementById("guestNameDisplay").innerText = "Error decrypting the guest name.";
-      }
+		const hash = window.location.hash;
+		if (hash && hash.startsWith("#/")) {
+			const encryptedName = hash.slice(2); 
+			console.log(`encryptedName: ${encryptedName}`);
+			try {
+			const guestName = decryptName(encryptedName);
+			if (guestName) {
+				console.log(`guestName: ${guestName}`);
+				document.getElementById("guestNameDisplay").innerText = `${guestName}`;
+			} else {
+				document.getElementById("guestNameDisplay").innerText = "Invalid invitation link.";
+			}
+			} catch (e) {
+			document.getElementById("guestNameDisplay").innerText = "Error decrypting the guest name.";
+			}
+		} else {
+        	document.getElementById("guestNameDisplay").innerText = "No invitation details found.";
+      	}
     }
 
     displayGuestName();
