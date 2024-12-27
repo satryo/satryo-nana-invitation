@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+  <h1>Generate Invitation Link</h1>
+  <input type="text" id="guestName" placeholder="Enter guest name" />
+  <button onclick="generateLink()">Generate Link</button>
+  <p id="invitationLink"></p>
+  <!--<button onclick="decrypt()">Decrypt</button>-->
+
+  <script>
+    const secretKey = "weddingSecretKey";
+
+    function encryptName(name) {
+      return CryptoJS.AES.encrypt(name, secretKey).toString();
+    }
+
+    function decryptName(encryptedName) {
+      const bytes = CryptoJS.AES.decrypt(encryptedName, secretKey);
+      console.log(`bytes: ${bytes.toString(CryptoJS.enc.Utf8)}`);
+      return bytes.toString(CryptoJS.enc.Utf8);
+    }
+
+    function decrypt() {
+        const link = document.getElementById("invitationLink").innerText;
+        console.log(`encryptedName: ${decodeURIComponent(link)}`);
+        console.log(decryptName('U2FsdGVkX1/1DKTQFlBbz7BYcq1tJmW4C8z9V24Ap+A='));
+    }
+
+    function generateLink() {
+      const guestName = document.getElementById("guestName").value;
+      if (!guestName) {
+        alert("Please enter a guest name.");
+        return;
+      }
+      const encryptedName = encryptName(guestName);
+      console.log(`encryptedName: ${encryptedName}`);
+      const link = `https://satryo.github.io/satryo-nana-invitation/#/${encodeURIComponent(encryptedName)}`;
+      document.getElementById("invitationLink").innerHTML = `<a href="${link}" target="_blank">${link}</a>`;
+    }
+  </script>
+</body>
+</html>
