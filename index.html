@@ -843,6 +843,7 @@
 		<style>img#wpstats{display:none}</style>
 		<meta name="generator" content="Elementor 3.25.10; features: e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-auto">
 		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 <script>
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -877,13 +878,13 @@ function decryptName(encryptedName) {
     function displayGuestName() {
 		const hash = window.location.hash;
 		if (hash && hash.startsWith("#/")) {
-			const encryptedName = hash.slice(2); 
-			console.log(`encryptedName: ${encryptedName}`);
+			const encryptedName = decodeURIComponent(hash.slice(2)); 
+			// console.log(`encryptedName: ${encryptedName}`);
 			try {
 			const guestName = decryptName(encryptedName);
 			if (guestName) {
 				console.log(`guestName: ${guestName}`);
-				document.getElementById("guestNameDisplay").innerText = `${guestName}`;
+				document.getElementById("guestNameDisplay").innerText = guestName;
 			} else {
 				document.getElementById("guestNameDisplay").innerText = "Invalid invitation link.";
 			}
@@ -894,8 +895,6 @@ function decryptName(encryptedName) {
         	document.getElementById("guestNameDisplay").innerText = "No invitation details found.";
       	}
     }
-
-    displayGuestName();
 </script>
 <style>
 #stickyheaders{
@@ -1912,6 +1911,7 @@ button.onclick = function launch() {
 			jQuery( window ).on( 'load', function() {
 				jQuery('input[name="um_request"]').val('');
 			});
+			displayGuestName();
 		</script>
 		</body>
 </html>
