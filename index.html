@@ -868,7 +868,28 @@ mypos = mywindow.scrollTop();
 }, 300);
 });
 });
+const secretKey = "weddingSecretKey";
+function decryptName(encryptedName) {
+      const bytes = CryptoJS.AES.decrypt(encryptedName, secretKey);
+      return bytes.toString(CryptoJS.enc.Utf8);
+    }
 
+    function displayGuestName() {
+      const encryptedName = decodeURIComponent(window.location.pathname.slice(1));
+      try {
+        const guestName = decryptName(encryptedName);
+        if (guestName) {
+			console.log(`guestName: ${guestName}`);
+          document.getElementById("guestNameDisplay").innerText = `${guestName}`;
+        } else {
+          document.getElementById("guestNameDisplay").innerText = "Invalid invitation link.";
+        }
+      } catch (e) {
+        document.getElementById("guestNameDisplay").innerText = "Error decrypting the guest name.";
+      }
+    }
+
+    displayGuestName();
 </script>
 <style>
 #stickyheaders{
@@ -946,7 +967,7 @@ transform: translateY(-110px); /*adjust this value to the height of your header*
 				</div>
 				<div class="elementor-element elementor-element-d4f11b4 elementor-invisible elementor-widget elementor-widget-heading" data-id="d4f11b4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_mobile&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Family and Friends</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default" id="guestNameDisplay">Family and Friends</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-77c39b3 elementor-widget elementor-widget-html" data-id="77c39b3" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
